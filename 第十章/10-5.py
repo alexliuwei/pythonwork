@@ -15,3 +15,5 @@ file_name = ['62535-0.txt','62540-8.txt','62543-8.txt','那些苦不堪言的日
 
 for i in file_name:
     word_cont(i)
+
+print("abcjskadj")
