@@ -8,6 +8,9 @@ class City_test(unittest.TestCase):#定义了一个类继承unittest.TestCase
         city_name = get_ciy_name('cq','china')#调用get_ciy_name函数给实参并把值赋值给变量
         self.assertEqual(city_name,'Cq,China')#用assertEqual方法比对输出的结果是否一直
 
+    def test_city_country_population(self):#定义一个测试方法
+        city_name = get_ciy_name('cq','china',50000)#测试get_ciy_name函数给可选实参的情况下的值
+        self.assertEqual(city_name,'Cq,China Population 50000')
 
 if __name__ == '__main__':#如果程序在本文件用运行就运行if语句以下的代码，如果是已模块的方式导入就不运行if以下的代码相当于一个程序的虚拟入口
     unittest.main()
